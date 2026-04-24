@@ -86,7 +86,7 @@ nav.scrolled .nav-links a { color: #1A1A18; }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 0, 0.38);
 }
 
 .hero-content {
@@ -165,7 +165,7 @@ nav.scrolled .nav-links a { color: #1A1A18; }
 
 /* products */
 .products {
-  padding: 100px 52px;
+  padding: 120px 52px;
 }
 
 .section-label {
@@ -298,7 +298,7 @@ nav.scrolled .nav-links a { color: #1A1A18; }
 
 /* brands */
 .brands-section {
-  padding: 100px 52px;
+  padding: 120px 52px;
 }
 
 .brands-grid {
@@ -309,17 +309,21 @@ nav.scrolled .nav-links a { color: #1A1A18; }
 }
 
 .brand-tile {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 28px;
   background: #EDE8E1;
-  transition: background 0.25s ease;
+  border-top: 2px solid transparent;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-.brand-tile:hover { background: #C8BFB0; }
+.brand-tile:hover {
+  background: #E3DDD5;
+  border-top-color: #8B7355;
+}
 
 .brand-tile span {
   font-family: 'Cormorant Garamond', serif;
@@ -541,6 +545,8 @@ footer {
     gap: 28px;
   }
 
+  .editorial-text h2 { font-size: 38px; }
+
   .footer-top {
     grid-template-columns: 1fr 1fr;
     gap: 36px;
@@ -623,18 +629,32 @@ footer {
 
 .review-card {
   background: #FAFAF8;
-  padding: 36px 32px 32px;
+  padding: 40px 36px 36px;
   display: flex;
   flex-direction: column;
   gap: 18px;
   text-align: left;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  border: 1px solid #E8E2DA;
+  position: relative;
+  overflow: hidden;
+}
+
+.review-card::before {
+  content: '\201C';
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 120px;
+  line-height: 1;
+  color: #E8E2DA;
+  position: absolute;
+  top: -8px;
+  right: 20px;
+  pointer-events: none;
 }
 
 .review-card--featured {
   padding-top: 44px;
   padding-bottom: 40px;
-  box-shadow: 0 4px 28px rgba(0,0,0,0.10);
+  border-top: 2px solid #8B7355;
 }
 
 .review-stars {
@@ -656,24 +676,10 @@ footer {
 .review-author {
   margin-top: 8px;
   display: flex;
-  align-items: center;
-  gap: 14px;
+  flex-direction: column;
+  gap: 3px;
   padding-top: 20px;
   border-top: 1px solid #E8E2DA;
-}
-
-.author-avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.author-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
 }
 
 .author-name {
