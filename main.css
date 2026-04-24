@@ -78,7 +78,7 @@ nav.scrolled .nav-links a { color: #1A1A18; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1200&q=80');
+  background-image: url('img/hero.jpg');
   background-size: cover;
   background-position: center 20%;
 }

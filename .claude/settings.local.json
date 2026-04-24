@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:holmensenter.no)",
+      "WebFetch(domain:www.rortunet.no)",
+      "Bash(curl -sL \"https://dam.thon.com/transform/3e001bc2-40a8-4990-99c1-a69ae36a5a1e/dame-handler-klaer-jpg?io=transform%3Afill%2Cwidth%3A1200%2Cheight%3A800&format=webp\" -o jorbaek-butikk.webp)",
+      "Bash(curl -sL \"https://dam.thon.com/transform/c424c36b-a510-4de6-9568-ffdc5976e9c2/joerbaek-logo-png?io=transform%3Afit%2Cwidth%3A300&format=webp\" -o jorbaek-logo.webp)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1400&q=80\" -o hero.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1617137968427-85924c800a22?w=800&q=80\" -o blazer.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&q=80\" -o skjorte.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80\" -o kjole.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&q=80\" -o chinos.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=800&q=80\" -o kaape.jpg)"
+    ]
+  }
+}
